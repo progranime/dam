@@ -1,0 +1,27 @@
+{
+    "name": "meta-crawler-revamp",
+    "version": "1.0.0",
+    "description": "To crawl the keywords of the images uploaded to DAM",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "server": "nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Jeremy Espinosa",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.0.1",
+        "express": "^4.16.3",
+        "lodash": "^4.17.11",
+        "mysql": "^2.16.0",
+        "node-exiftool": "^2.3.0",
+        "node-thumbnail": "^0.14.0",
+        "node-zip": "^1.1.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.7"
+    }
+}
